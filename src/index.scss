@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+
+$menu-background: #FFF7ED;
+$main-orange-button: #FF8C38;
+$second-orange-button: #FFCC8D;
+$lighter-orange-color: #FFEAD0;
+$red-orange-color: #E17654;
+$dark-black-color: #161616;
+$menu-text-color: #4D4D4D;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+}
+
+.container {
+  padding-inline: 2.5rem;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 495px;
+}
+
+.menu {
+  width: 100%;
+  height: 111.62px;
+  background-color: $menu-background;
+  display: flex;
+  align-items: center;
+
+  .nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .link {
+      font-size: 1.6rem;
+      margin-left: 1.5rem;
+      color: $menu-text-color;
+
+      &:hover {
+        text-decoration: underline;
+        color: black;
+      }
+    }
+
+    .logo {
+      margin-right: auto;
+      color: black;
+      font-weight: 900;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.home-main {
+  color: white;
+  background: url('./assets/');
+
+  &__title {
+    margin-top: 6.5rem;
+    margin-bottom: 2.2rem;
+    font-size: 3.6rem;
+    font-weight: 800;
+    line-height: 42px;
+  }
+}

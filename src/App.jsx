@@ -1,10 +1,23 @@
-import { useState } from 'react'
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './Home'
+import About from './About'
+
 
 function App() {
-  const [test, setTest] = useState('state')
-
   return (
-    <h1>{test}</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path='/'
+          element={<Home />}
+        />
+        <Route
+          path='/about'
+          element={<About />}
+        />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
